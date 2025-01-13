@@ -1,79 +1,74 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# React Native FileManager App
 
-# Getting Started
+## Overview
+The React Native FileManager app is a cross-platform application for managing files and directories on mobile devices. It leverages native modules to handle file system operations, providing robust performance and seamless integration with the underlying platform.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## Features
+- **Browse Files and Directories**: Navigate through the file system with an intuitive interface.
+- **File Operations**: Create, delete, rename, and move files or directories.
+- **File Preview**: Open and preview supported file types.
+- **Search**: Quickly search for files and folders.
+- **Cross-Platform Support**: Works on both Android and iOS devices.
+- **Native Module Integration**: Uses native code for file operations to ensure optimal performance.
 
-## Step 1: Start the Metro Server
+## Screenshots
+Here are some screenshots of the app showcasing its features and user interface:
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+- **Home Screen**:
+  ![Home Screen](./screenshots/home_screen.png)
 
-To start Metro, run the following command from the _root_ of your React Native project:
+- **File Browser**:
+  ![File Browser](./screenshots/file_browser.png)
 
-```bash
-# using npm
-npm start
+- **Search Feature**:
+  ![Search Feature](./screenshots/search_feature.png)
 
-# OR using Yarn
-yarn start
-```
+## Installation
 
-## Step 2: Start your Application
+### Prerequisites
+- [Node.js](https://nodejs.org/) (>= 16.x)
+- [React Native CLI](https://reactnative.dev/docs/environment-setup)
+- Android Studio and Xcode (for running on Android and iOS)
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+### Steps
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/dharmendra841434/FilesMitra.git
+   cd FilesMitra
+   ```
 
-### For Android
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-```bash
-# using npm
-npm run android
+3. Link the native module:
+   For React Native version < 0.60, run:
+   ```bash
+   react-native link react-native-filemanager
+   ```
+   For React Native version >= 0.60, auto-linking should handle this step.
 
-# OR using Yarn
-yarn android
-```
+4. Run the app:
+   - **Android**:
+     ```bash
+     npx react-native run-android
+     ```
+   - **iOS**:
+     ```bash
+     npx pod-install
+     npx react-native run-ios
+     ```
 
-### For iOS
+## Contributing
+Contributions are welcome! To contribute:
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Submit a pull request.
 
-```bash
-# using npm
-npm run ios
+## License
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
 
-# OR using Yarn
-yarn ios
-```
+## Acknowledgments
+Special thanks to the React Native community and contributors for their valuable resources and support.
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
-
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
-
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
